@@ -1,0 +1,424 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html,body {
+	height: 100%;
+	background-color: #ddd;
+}
+
+title {
+	font-family: 'voice_in_my_headregular';
+}
+.responsive {
+	width: 100%;
+	height: auto;
+	opacity: 0;
+	animation: zoom .5s .2s forwards cubic-bezier(0.4,-0.2, 0.71, 1.43);
+}
+
+@font-face {
+    font-family: 'voice_in_my_headregular';
+    src: url('font/voice_in_my_head-webfont.woff2') format('woff2'),
+         url('font/voice_in_my_head-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hollaboi_freeregular';
+    src: url('font/hollaboi_free-webfont.woff2') format('woff2'),
+         url('font/hollaboi_free-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'funsizedregular';
+    src: url('font/funsized-webfont.woff2') format('woff2'),
+         url('font/funsized-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@keyframes zoom {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+.container {
+	background-color: #070707;
+	width: 100%;
+	height: 100%;
+}
+
+.header {
+	width: 1347px;
+	height: 80px;
+	position: fixed;
+	background-color: #0f0f0f;
+	top: 0;
+	z-index: 9999;
+}
+
+.header img {
+	width: 150px;
+	height: 80px;
+	float: left;
+}
+
+.header ul li {
+	display: inline-block;
+	font-size: 20px;
+	margin-left: -10px;
+	float: right;
+	font-family: 'hollaboi_freeregular';
+}
+
+.header ul li a{
+	color: white;
+	margin: 10px;
+	padding: 15px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 80px;
+}
+
+.header ul li a:target {
+	transition: .5s;
+}
+
+.header ul li a:hover {
+	background-color: #333333;
+	transition: .2s background-color;	
+}
+
+.header_intro {
+	position: absolute;
+	top: 290px;
+	right: 0;
+}
+
+.header_intro h1 {
+	color: white;
+	font-size: 28px;
+   	font-family: 'funsizedregular';
+	position: relative;
+	right: 15px;
+	top: 0px;
+	text-shadow: 2px 1px 5px #999999;
+}
+
+
+@media (max-width: 720px){
+	.header_intro h1 {
+		font-size: 10px;
+		top: -180px;
+		position: fixed;
+	}
+}
+
+.header_intro h2 {
+	color: white;
+	position: absolute;
+	right: 200px;
+	top: 80px;
+	font-size: 32px;
+	text-shadow: 2px 1px 5px #999999;
+	font-family: 'my_underwoodregular';
+}
+
+.header_intro p {
+	color: #fff;
+	font-style: italic;
+	position: absolute;
+	top: 170px;
+	right: 80px;
+	font-size: 72px;
+	text-shadow: 0px 1px 10px #fff;
+	font-family: 'voice_in_my_headregular';
+}
+
+.main {
+	height: 700px;
+	width: 100%;
+	background-color: #070707;
+	position: relative;
+	margin-top: -5px;
+	padding-bottom: 100px;
+}
+
+@font-face {
+    font-family: 'my_underwoodregular';
+    src: url('myunderwood.woff2') format('woff2'),
+         url('myunderwood.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.main h1 {
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 90px;
+	font-size: 40px;
+}
+
+.about_us {
+	width: 1160px;
+	height: 500px;
+	margin-top: 50px;
+	margin-left: 80px;
+	position: relative;
+	top: 80px;
+	background-color: white;
+	box-shadow: 0px 30px 10px -20px rgba(229, 230, 232,.75);
+	border-radius: 50px;
+	overflow: hidden;
+	transition: .3s;
+}
+
+.about_us:hover {
+	margin-top: 40px;
+	box-shadow: 0px 80px 10px -40px rgb(229, 230, 232,.15);
+
+
+}
+
+.right_about {
+	float: left;
+}
+
+.right_about img {
+	width: 630px;
+	height: 600px;
+}
+
+.left_about {
+	float: right;
+	width: 520px;
+	height: 540px;
+	overflow: hidden;
+}
+
+.left_about p{
+	text-align: center;
+	line-height: 540px;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.cont_gallery {
+	height: 755px;
+	width: 100%;
+	position: relative;
+	top: 0;
+	background-color: #070707;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+
+}
+
+.cont_gallery h1 {
+	position: relative;
+	top: 130px;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+
+
+.gallery li {
+	float: left;
+	margin-right: 20px;
+	position: relative;
+	margin-left: 10px;
+	top: -20px;
+}
+
+.gallery li span {
+	display: block;
+	width: 350px;
+	height: 0px;
+	background-color: rgba(200,200,200,.5);
+	position: absolute;
+	top: 80px;
+	left: 5px;
+	text-align: center;
+	line-height: 400px;
+	color:#000;
+	text-shadow: 1px 1px 1px #ddd;
+	/*font-size: 20px;*/
+	opacity: 0;
+	transition: .3s;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.gallery li a:hover span {
+	height: 400px;
+	opacity: 1;
+	box-shadow: 2px 4px 18px 11px rgba(229, 230, 232,.15)
+}
+
+.cont_gallery .gallery {
+	width: 1160px;
+	height: 500px;
+	margin-top: 130px;
+	margin-left: 80px;
+	position: relative;
+	border-radius: 50px: 
+	 -moz-border-radius: 7px;
+    border-radius: 50px;
+    transition: .4s;
+}
+
+
+.cont_gallery .gallery img {
+	display: inline-block;
+	max-width: 98%;
+	height: 400px;
+	width: 350px;
+	margin-left: 5px;
+	margin-top: 80px;			
+}
+
+
+.cont_OurTeams {
+	height: 800px;
+	width: 100%;
+	background-color: #070707;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+
+}
+
+.cont_OurTeams h1 {
+	font-size: 30px;
+	position: relative;
+	top: 130px;
+}
+
+.cont_OurTeams .our_teams {
+	width: 1160px;
+	height: 500px;
+	margin-top: 130px;
+	margin-left: 80px;
+	border: 1px solid #070707;
+	position: relative;
+	top: 20px;
+	border-radius: 50px: 
+	 -moz-border-radius: 7px;
+    border-radius: 50px;
+}
+
+
+.our_teams .team1 img {
+	display: inline-block;
+	max-width: 98%;
+	height: 400px;
+	width: 350px;
+	margin-left: 5px;
+	margin-top: 80px;
+	transition: .3s;
+}
+
+.team1 li {
+	float: left;
+	margin-right: 20px;
+	position: relative;
+	left: 80px;
+	margin-left: -20px;
+	top: -10px;
+	opacity: .5;
+	transition: .3s;
+}
+
+.our_teams .team1 img:hover {
+		box-shadow: 2px 4px 18px 2px rgba(229, 230, 232,.15);
+}
+
+.team1 li:hover{
+			top: -30px;
+		opacity: 1;
+}
+
+.footer {
+	width: 100%;
+	height: 100px;
+	background-color: #070707;
+}
+
+.footer h1 {
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+
+.footer p {
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 720px){
+	.img {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
